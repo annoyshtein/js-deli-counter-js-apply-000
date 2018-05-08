@@ -30,5 +30,5 @@ function nowServing(line) {
         				}
         			 	lineStatus = lineStatus.replace(/,\s*$/, ""); // removes any comma at the end
         		    }
-        			document.write(lineStatus);
+        			return lineStatus;
         		}
