@@ -1,5 +1,9 @@
 var katzDeli = [];
 
-function takeANumber () {
+function takeANumber() {
 
+}
+
+function nowServing() {
+  
 }
