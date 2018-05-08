@@ -15,10 +15,12 @@ function nowServing(line) {
     				currentServe = "Currently serving " + line[0] + ".";
     			} // checks if anyone is waiting on line, and if so, returns who is first in line
     			line.shift();
+          // removes the first person from the line
           return currentServe;
 
     		}
 
 function currentLine(line) {
-
+    var lineStatus = "The line is currently empty."
+      // Creates
 }
