@@ -9,7 +9,7 @@ function takeANumber(line,name) {
 		}
 
 function nowServing(line) {
-    			var currentServe = "There is nobody waiting to be served."
+    			var currentServe = "There is nobody waiting to be served!"
     				// Creates the default message if there is nobody waiting.
     			if (line.length > 0) {
     				currentServe = "Currently serving " + line[0] + ".";
