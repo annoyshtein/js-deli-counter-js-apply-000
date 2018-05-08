@@ -8,9 +8,15 @@ function takeANumber(line,name) {
       return positionInLine;
 		}
 
-function nowServing() {
- 
-}
+function nowServing(line) {
+    			var currentServe = "There is nobody waiting to be served."
+    				// Creates the default message if there is nobody waiting.
+    			if (line.length > 0) {
+    				currentServe = "Currently serving " + line[0] + ".";
+    			} // checks if anyone is waiting on line, and if so, returns who is first in line
+    			document.write(currentServe);
+    			line.shift();
+    		}
 
 function currentLine() {
 
