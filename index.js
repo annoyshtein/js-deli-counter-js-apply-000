@@ -14,8 +14,9 @@ function nowServing(line) {
     			if (line.length > 0) {
     				currentServe = "Currently serving " + line[0] + ".";
     			} // checks if anyone is waiting on line, and if so, returns who is first in line
-    			return currentServe;
     			line.shift();
+          return currentServe;
+    			
     		}
 
 function currentLine() {
