@@ -17,10 +17,18 @@ function nowServing(line) {
     			line.shift();
           // removes the first person from the line
           return currentServe;
-
     		}
 
-function currentLine(line) {
-    var lineStatus = "The line is currently empty."
-      // Creates
-}
+        function currentLine(line) {
+        		    var lineStatus = "The line is currently empty."
+        		      // Creates the default message if the line is empty.
+        		    if (line.length > 0) {  // checks if anyone is on line
+        				lineStatus = "The line is currently: "
+        				var i; // creates loop counter
+        				for (i = 0; i < line.length; i++) { // loops until everyone is on the list
+        					lineStatus = lineStatus + (i+1) + ". " + line[i] + ", "
+        				}
+        			 	lineStatus = lineStatus.replace(/,\s*$/, ""); // removes any comma at the end
+        		    }
+        			document.write(lineStatus);
+        		}
